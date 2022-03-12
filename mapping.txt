@@ -1,0 +1,28 @@
+Main                test
+Invoice number    =    InvNo [4]
+Code              =    CustCode [9]
+Name              =    ItemName [37]
+Type              =    PackName [39]
+Packing Number    =    PackName [39]
+Quantity          =    InvQty [45]
+Free              =    InvScQty [46]
+PurchacePrice     =    (saleRate[50] * (100-InvDis[49])/100)*(100+cgst[81] + sgst[83])/100
+GST               =    csgtPer[81] + sgstPer[83]
+Discount          =    blank
+MRP               =    itemMRP[58]
+list = [4,9,37,39,45,46, 100 , 81 + 83 , 100 , 58, 40, 100, 100, 100, 65, 100, 100, 80, 100, 100, 100, 100, 100]
+special = [7(pp), 12(PD), 13(ED)]
+
+BatchNo           =    BatchNo[40]
+PurchaceDate      =    (in d-monthname-yy format) InvDate[5] or InvDay + enum[InvMonth] + InvYear(only tens and units)
+ExpDate           =    (in dd/mm/yyyy format)ExpDate[41]   (replace - with /)
+Vendor Name       =     Seller(could be blank)[91]
+Manufacturer Name =     MktgComp [65]
+Compostitions     =     blank
+Rack No:          =     blank
+HsnCode           =     hsnCode[80]
+Schedule Type     =     blank
+GST includedIn Rt =     blank
+department        =     blank
+Margin %          =     blank
+Margin            =     blank
